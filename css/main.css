@@ -12,6 +12,7 @@ html {
     overflow-x: hidden;
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     }
+    
 a {
         color: currentColor;
         cursor: pointer;
@@ -38,7 +39,7 @@ a {
         text-transform: uppercase;
         }  
         .button,
-        .social a {
+        .social a{
         transform-origin: center;
         transition-duration: 100ms;
         }             
@@ -63,17 +64,98 @@ a {
             position: relative;
             min-height: 100vh;
             }
-            .side {
+.side {
             max-height: 20rem;
             max-width: 20rem;
             }
-            .about {
-            max-width: 26rem;
+.about {
+            max-width: 20rem;
+            
             }  
-            .job {
+.job {
                 color: #ffe479;
                 font-size: 0.75rem;
-                }            
+                }     
+    
+.headline-proyectos, .headline-tecnologias{
+    display: block;
+    margin-bottom: 4%;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    line-height: 1.3;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    color: #ffe479;
+    font-size: 1.5rem;
+}   
+.div-proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.proyectos{
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    background: rgba(.5);
+    text-align: center;
+}
+.proyectos img{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 2px rgba(0,0,0,0.2);
+    }
+.proyectos img:hover{
+    filter: brightness(30%);
+    transition: 0.5s;
+}
+.inactivo{
+    display: none;
+}
+.descripcion-proyecto1,
+.descripcion-proyecto2,
+.descripcion-proyecto3{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    font-weight:700;
+    top: 30%;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.descripcion-proyecto3{
+    top: 25%;
+}
+
+.contenedor-tecnologias ul{
+    display: flex;
+    width: 45%;
+    height: auto;
+    justify-content: space-between;
+}
+.tecnologias{
+    width: 3rem;
+    height: auto;
+    opacity: 0.8;
+    overflow: visible;
+}
+.tecnologias img{
+        filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.5));
+}
+.tecnologias:hover{
+    opacity: 1;
+    transform: scale(1.3);
+    transition-duration: 100ms;
+}
+
 @media screen and (max-width: 799px) {
                 .content {
                 flex-direction: column;
@@ -85,10 +167,16 @@ a {
                 margin-bottom: 3rem;
                 width: 100%;
                 }
+                .contenedor-proyectos, .contenedor-tecnologias{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 30% auto;
+        }  
+        
                 }                  
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 799.1px) {
                     .content {
-                    align-items: center;
                     justify-content: space-around;
                     justify-content: space-evenly;
                     padding: 4rem;
@@ -105,6 +193,23 @@ a {
                     flex-grow: 1;
                     flex-shrink: 1;
                     }
+                    .contenedor-proyectos{
+                        width: 800px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: 25% auto;
+            }    
+            .contenedor-tecnologias{
+                position: absolute;
+                right: 4%;
+                top: 87%;
+                width: 350px;
+                display: flex;
+                flex-wrap: wrap;
+           }
+            .contact{
+                clear: both;
+            }
                     }  
 .button {
                         background-color: #fff;
@@ -140,8 +245,8 @@ a {
                             }   
                             .description {
                                 font-size: 1.5rem;
-                                }  
-.contact {
+                            }  
+                            .contact {
                                     display: inline-block;
                                     margin-top: 1.5rem;
                                     vertical-align: top;
@@ -153,11 +258,25 @@ a {
                                         .button:active {
                                             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
                                             transform: scale(0.98) translateY(-2px);
-                                            }   
-                                            .social {
+                                            } 
+
+                                     
+                                    .div-proyectos{
+                                        margin: 0 auto -20%;
+                                    }
+                                    
+                                    .headline-tecnologias{
+                                        width: 100%;
+                                    }
+                                    .contenedor-tecnologias ul{
+                                        margin-top: 20px;
+                                        width: 90%;
+                                    }
+                                                .social{
                                                 display: flex;
                                                 margin-top: 1.5rem;
                                                 }
+
                                                 .social li {
                                                 height: 2rem;
                                                 margin-right: 0.5rem;
@@ -172,7 +291,7 @@ a {
                                                     justify-content: center;
                                                     opacity: 0.5;
                                                     transition-property: opacity, transform;
-                                                    width: 2rem;
+                                                    
                                                 }
                                                 .social a:hover {
                                                     opacity: 1;
