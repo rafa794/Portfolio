@@ -201,14 +201,14 @@ a {
             }    
             .contenedor-tecnologias{
                 position: absolute;
-                right: 4%;
-                top: 87%;
+                left: 47%;
+                top: 88%;
                 width: 350px;
                 display: flex;
                 flex-wrap: wrap;
            }
             .contact{
-                clear: both;
+                margin: 25% 20px auto;
             }
                     }  
 .button {
