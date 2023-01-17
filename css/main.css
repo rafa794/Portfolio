@@ -156,7 +156,7 @@ a {
     transition-duration: 100ms;
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 884.9px) {
                 .content {
                 flex-direction: column;
                 justify-content: center;
@@ -175,7 +175,7 @@ a {
         }  
         
                 }                  
-@media screen and (min-width: 799.1px) {
+@media screen and (min-width: 885px) {
                     .content {
                     justify-content: space-around;
                     justify-content: space-evenly;
@@ -210,7 +210,8 @@ a {
             .contact{
                 margin: 25% 20px auto;
             }
-                    }  
+        }  
+                      
 .button {
                         background-color: #fff;
                         border-radius: 290486px;
