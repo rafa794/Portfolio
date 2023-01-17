@@ -115,9 +115,7 @@ a {
 .inactivo{
     display: none;
 }
-.descripcion-proyecto1,
-.descripcion-proyecto2,
-.descripcion-proyecto3{
+.descripcion-proyecto{
     position: absolute;
     width: 100%;
     height: auto;
@@ -131,7 +129,7 @@ a {
     pointer-events: none;
 }
 
-.descripcion-proyecto3{
+.maqueta{
     top: 25%;
 }
 
