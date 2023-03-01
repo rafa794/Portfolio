@@ -154,6 +154,11 @@ a {
     transition-duration: 100ms;
 }
 
+.contenedor-proyectos-ml{
+    margin-top: 54%;
+}
+
+
 @media screen and (max-width: 884.9px) {
                 .content {
                 flex-direction: column;
@@ -171,7 +176,9 @@ a {
                     flex-wrap: wrap;
                     margin: 30% auto;
         }  
-        
+        .contenedor-proyectos-ml{
+            margin-top: auto;
+        }
                 }                  
 @media screen and (min-width: 885px) {
                     .content {
@@ -200,7 +207,7 @@ a {
             .contenedor-tecnologias{
                 position: absolute;
                 left: 47%;
-                top: 88%;
+                top: 58%;
                 width: 350px;
                 display: flex;
                 flex-wrap: wrap;
