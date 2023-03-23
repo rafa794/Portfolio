@@ -6,6 +6,6 @@ for (let i = 0; i < imgs.length; i++) {
   imgs[i].addEventListener("mouseout", toggleInactivo);
 }
 
-function toggleInactivo(){
-   this.nextElementSibling.classList.toggle("inactivo");
+function toggleInactivo() {
+  this.nextElementSibling.classList.toggle("inactivo");
 }
