@@ -20,7 +20,7 @@ a {
 }
 .wallpaper,
 .picture-shadow,
-picture-image {
+.picture-image {
   display: block;
   height: 100%;
   left: 0;
@@ -90,33 +90,7 @@ picture-image {
   color: #ffe479;
   font-size: 1.5rem;
 }
-.div-proyectos {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.proyectos {
-  display: inline-block;
-  position: relative;
-  width: 300px;
-  height: 200px;
-  margin: 20px;
-  background: rgba(0.5);
-  text-align: center;
-}
-.proyectos img {
-  display: block;
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.2);
-}
-.proyectos img:hover {
-  filter: brightness(30%);
-  transition: 0.5s;
-}
-.inactivo {
-  display: none;
-}
+
 .descripcion-proyecto {
   position: absolute;
   width: 100%;
@@ -130,9 +104,8 @@ picture-image {
   transition: 0.5s;
   pointer-events: none;
 }
+.contenedor-tecnologias{
 
-.maqueta {
-  top: 25%;
 }
 
 .contenedor-tecnologias ul {
@@ -156,10 +129,48 @@ picture-image {
   transition-duration: 100ms;
 }
 
-.contenedor-proyectos-ml {
-  margin-top: 54%;
-}
-
+.container {
+    display: flex;
+    width: 90vw;
+  }
+  .panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #631616;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+  }
+  
+  .panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    margin: 0;
+    opacity: 0;
+  }
+  
+  .panel.active {
+    flex: 5;
+  }
+  
+  .panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+  }
+  .panel.active:nth-child(2) a,
+  .panel.active:nth-child(4) a{
+    color: #fff;
+  }
+  .panel.active:nth-child(6) a{
+    color: currentColor;
+  }
 @media screen and (max-width: 884.9px) {
   .content {
     flex-direction: column;
@@ -178,9 +189,8 @@ picture-image {
     flex-wrap: wrap;
     margin: 30% auto;
   }
-  .contenedor-proyectos-ml {
-    margin-top: auto;
-  }
+    
+
 }
 @media screen and (min-width: 885px) {
   .content {
@@ -208,8 +218,8 @@ picture-image {
   }
   .contenedor-tecnologias {
     position: absolute;
-    left: 47%;
-    top: 58%;
+    left: 50%;
+    top: 89%;
     width: 350px;
     display: flex;
     flex-wrap: wrap;
@@ -256,7 +266,7 @@ picture-image {
 }
 .contact {
   display: inline-block;
-  margin-top: 1.5rem;
+  margin-top: -3.5rem;
   vertical-align: top;
 }
 .button:hover {
